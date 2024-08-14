@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreational Sports League Revenue and Expense Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Simple Recreational Sports League Revenue and Expense Calculator</h1>
+
+    <div class="container">
+        <div class="item" id="tips">
+            <h2>Tips</h2>
+            <ul>
+                <li>If your program uses a "team registration fee," input the "Number of Players" as 1 and the "fee per player" as the full team registration fee.</li>
+                <li>For more advanced budget calculations, including additional sponsorships, merchandise, rental cost, materials and supplies, salaries, please visit our Advanced Sports League Revenue and Expense Calculator (coming soon).</li>
+            </ul>
+            <h2>Results</h2>
+            <div id="result" class="result"></div>
+        </div>
+        <div class="item" id="calc">
+            <h2>Revenue</h2>
+            <label for="fee">Fee Per Player ($):</label>
+            <input type="number" id="fee" value="85" step="0.01">
+
+            <label for="patronsPerTeam">Expected Number of Players Per Team:</label>
+            <input type="number" id="patronsPerTeam" value="8.5" step="0.01">
+
+            <label for="numTeams">Expected Number of Teams (Even Numbers Only):</label>
+            <input type="number" id="numTeams" value="38" step="0.01">
+
+            <label for="numGames">Number of Games in Season:</label>
+            <input type="number" id="numGames" value="7" step="0.01">
+
+            <h2>Expenses</h2>
+            <label for="officialFee">Total Official(s) Fee per Game ($):</label>
+            <input type="number" id="officialFee" value="107.50" step="0.01">
+
+            <label for="staffPerGame">Number of Staff per Game (scorekeeper, gym coordinator, etc.):</label>
+            <input type="number" id="staffPerGame" value="1" step="0.01">
+
+            <label for="staffHoursPerGame">Staff Hours Worked Per Game:</label>
+            <input type="number" id="staffHoursPerGame" value="1.1" step="0.01">
+
+            <label for="staffHourlyRate">Staff Hourly Rate ($):</label>
+            <input type="number" id="staffHourlyRate" value="18.49" step="0.01">
+
+            <button onclick="calculateBudget()">Calculate Budget</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
